@@ -4,8 +4,8 @@ class House:
 
     def __new__(cls, *args, **kwargs):
         obj = object.__new__(cls)
-        args = args[0]
-        cls.houses_history.append(args)
+        # args = args[0]
+        cls.houses_history.append(args[0])
         return obj
 
     def __init__(self, name, number_of_floors):
